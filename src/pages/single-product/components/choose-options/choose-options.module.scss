@@ -1,0 +1,30 @@
+@import 'styles/variables';
+@import 'styles/functions';
+
+.option {
+  font-size: $font-sm;
+
+  margin-top: spacing(5);
+
+  ul {
+    display: flex;
+    gap: spacing(1.5);
+  }
+
+  li {
+    border: 1px solid $black;
+
+    margin-top: spacing(1.5);
+    padding: spacing(1);
+
+    cursor: pointer;
+  }
+
+  &Active {
+    background-color: $black40x;
+  }
+
+  &Disabled {
+    opacity: 0.5;
+  }
+}

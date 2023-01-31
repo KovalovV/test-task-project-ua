@@ -1,0 +1,41 @@
+@import 'styles/variables';
+@import 'styles/functions';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: spacing(6);
+
+  @media (max-width: 615px) {
+    flex-direction: column;
+
+    padding: spacing(4) 0;
+  }
+}
+
+.left {
+  flex: 0 1 55%;
+}
+
+.right {
+  flex: 0 1 40%;
+
+  h3 {
+    font-size: 36px;
+    color: $kinda-black;
+    font-weight: 600;
+    margin-top: spacing(3);
+  }
+
+  p {
+    font-size: $font-lg;
+    color: $kinda-black;
+    font-weight: 400;
+    margin-top: spacing(2.5);
+  }
+}
+
+.description {
+  margin-top: spacing(5);
+}

@@ -1,0 +1,68 @@
+@import 'styles/variables';
+
+.root {
+  position: relative;
+  min-height: 50vh;
+
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  cursor: none;
+  pointer-events: none;
+
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    transition: none !important;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid $green15;
+  border-right: 1.1em solid $green15;
+  border-bottom: 1.1em solid $green15;
+  border-left: 1.1em solid $green;
+  transform: translateZ(0);
+  animation: load8 1.1s infinite linear;
+}
+
+.fullWidth {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

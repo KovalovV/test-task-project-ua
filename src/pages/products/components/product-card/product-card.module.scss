@@ -1,0 +1,29 @@
+@import 'styles/variables';
+@import 'styles/functions';
+
+.root {
+  border-radius: spacing(1);
+  padding: spacing(2);
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $cream-soup;
+    transition: all 0.5s ease;
+  }
+}
+
+.photo {
+  img {
+    border-radius: spacing(1);
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    margin-top: spacing(1.5);
+  }
+
+  p {
+    margin-top: spacing(0.75);
+  }
+}

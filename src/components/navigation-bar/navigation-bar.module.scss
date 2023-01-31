@@ -1,0 +1,61 @@
+@import 'styles/variables';
+@import 'styles/functions';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: $black;
+  height: 72px;
+
+  padding: 0 spacing(3);
+  overflow: visible;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemRoot {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 10px 12px;
+  border-radius: 24px;
+
+  &:not(:first-child) {
+    margin-left: spacing(1);
+  }
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+
+  padding: spacing(1);
+  border-radius: 12px;
+  width: 100%;
+
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  &:hover {
+    background: $kinda-black;
+  }
+
+  h5 {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $creamy-white;
+  }
+}

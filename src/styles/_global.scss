@@ -1,0 +1,121 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: $primary-font;
+  color: $kinda-black;
+  font-size: $font-md;
+  letter-spacing: 0.1px;
+}
+
+body {
+  margin: 0;
+  background-color: $creamy;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: $kinda-black;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  outline: none;
+  font-family: $primary-font;
+  font-size: $font-md;
+}
+
+img,
+svg {
+  vertical-align: top;
+}
+
+img {
+  background-color: $black40;
+}
+
+ul {
+  list-style: none;
+}
+
+.root-container {
+  max-width: 1232px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  max-width: 500px;
+
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 920px) {
+    max-width: 300px;
+  }
+
+  @media (max-width: 615px) {
+    max-width: 400px;
+  }
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
